@@ -1,0 +1,14 @@
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/bin/Debug/netcoreapp2.2/BurgerShack.deps.json
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/bin/Debug/netcoreapp2.2/BurgerShack.runtimeconfig.json
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/bin/Debug/netcoreapp2.2/BurgerShack.runtimeconfig.dev.json
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/bin/Debug/netcoreapp2.2/BurgerShack.dll
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/bin/Debug/netcoreapp2.2/BurgerShack.pdb
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/obj/Debug/netcoreapp2.2/BurgerShack.csprojAssemblyReference.cache
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/obj/Debug/netcoreapp2.2/BurgerShack.csproj.CoreCompileInputs.cache
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/obj/Debug/netcoreapp2.2/BurgerShack.RazorAssemblyInfo.cache
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/obj/Debug/netcoreapp2.2/BurgerShack.RazorAssemblyInfo.cs
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/obj/Debug/netcoreapp2.2/BurgerShack.AssemblyInfoInputs.cache
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/obj/Debug/netcoreapp2.2/BurgerShack.AssemblyInfo.cs
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/obj/Debug/netcoreapp2.2/BurgerShack.RazorTargetAssemblyInfo.cache
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/obj/Debug/netcoreapp2.2/BurgerShack.dll
+/Users/kasandra/source/codeworks/dotnet/BurgerShack/obj/Debug/netcoreapp2.2/BurgerShack.pdb
