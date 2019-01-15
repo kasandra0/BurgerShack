@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BurgerShack.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +27,8 @@ namespace BurgerShack
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddMvc();
-      //   services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+      // services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+      services.AddTransient<BurgerRepository>();
 
     }
 
@@ -43,7 +45,7 @@ namespace BurgerShack
         app.UseHsts();
       }
 
-      //   app.UseHttpsRedirection();
+      // app.UseHttpsRedirection();
       app.UseMvc();
     }
   }
