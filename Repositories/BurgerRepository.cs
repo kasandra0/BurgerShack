@@ -19,37 +19,45 @@ namespace BurgerShack.Repositories
     {
       return _dB.QueryFirstOrDefault<Burger>($"SELECT * FROM Burgers3 WHERE id = @id", new { id });
     }
-    // public Burger AddBurger(Burger goodBurger)
-    // {
-    //   FakeDB.Burgers.Add(goodBurger);
-    //   return goodBurger;
-    // }
-    // public Burger EditBurger(int id, Burger burg)
-    // {
-    //   try
-    //   {
-    //     FakeDB.Burgers[id] = burg;
-    //     return burg;
-    //   }
-    //   catch (Exception ex)
-    //   {
-    //     Console.WriteLine(ex);
-    //     return null;
-    //   }
-    // }
-    // public bool DeleteBurger(int id)
-    // {
-    //   try
-    //   {
-    //     FakeDB.Burgers.Remove(FakeDB.Burgers[id]);
-    //     return true;
-    //   }
-    //   catch (Exception ex)
-    //   {
-    //     Console.WriteLine(ex);
-    //     return false;
-    //   }
-    // }
+    public Burger AddBurger(Burger newBurger)
+    {
+      int id = _dB.ExecuteScalar<int>(@"
+ 	INSERT INTO burgers3 (name, description, price) VALUES (@Name, @Description, @Price); 
+ 	SELECT LAST_INSERT_ID();", newBurger);
+      newBurger.Id = id;
+      return newBurger;
+    }
+    public Burger EditBurger(int id, Burger burg)
+    {
+      try
+      {
+        return _dB.QueryFirstOrDefault<Burger>($@"
+        UPDATE burgers3 SET
+        Name = @Name, 
+        Description = @Description,
+        Price = @Price
+        WHERE Id =@id;
+        SELECT * FROM burgers3 WHERE Id = @id;", burg);
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+        return null;
+      }
+    }
+    public bool DeleteBurger(int id)
+    {
+      try
+      {
+        _dB.QueryFirstOrDefault($@"DELETE FROM burgers3 WHERE Id = @id;", new { id });
+        return true;
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+        return false;
+      }
+    }
     public BurgerRepository(IDbConnection dB)
     {
       _dB = dB;

@@ -12,13 +12,7 @@ namespace BurgerShack.Models
     public string Description { get; set; }
     [Range(5, float.MaxValue)]
     public float Price { get; set; }
-    public int Id { get; private set; }
+    public int Id { get; set; }
 
-    public Burger(string name, string desc, float price)
-    {
-      Name = name;
-      Description = desc;
-      Price = price;
-    }
   }
 }
