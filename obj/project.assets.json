@@ -12142,7 +12142,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "MySqlConnector >= 0.49.2",
-      "dapper"
+      "dapper >= 1.50.5"
     ]
   },
   "packageFolders": {
@@ -12207,7 +12207,7 @@
           },
           "dapper": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[1.50.5, )"
           }
         },
         "imports": [

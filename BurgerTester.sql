@@ -14,8 +14,7 @@
 -- SELECT * FROM Burgers3 WHERE id=1
 
 
-UPDATE Burgers3 SET
-name =  "Faker ChzBurger" WHERE id =5;
+-- UPDATE Burgers3 SET
+-- name =  "Faker ChzBurger" WHERE id =5;
 SELECT * FROM Burgers3;
-SELECT * FROM Burgers;
-DROP TABLE Burgers;
+-- DROP TABLE Burgers3;
